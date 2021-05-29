@@ -406,7 +406,7 @@ def send_managed_process_signal(name, sig):
 
 # ****************** run loop ******************
 
-def manager_init(should_register=True):
+def manager_init(should_register=False):
   if should_register:
     reg_res = register()
     if reg_res:
