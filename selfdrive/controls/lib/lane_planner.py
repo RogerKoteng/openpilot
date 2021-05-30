@@ -29,7 +29,7 @@ def calc_d_poly(l_poly, r_poly, p_poly, l_prob, r_prob, lane_width, v_ego):
   prob_mods = []
   for t_check in [0.0, 1.5, 3.0]:
     width_at_t = eval_poly(width_poly, t_check * (v_ego + 7))
-    prob_mods.append(interp(width_at_t, [4.0, 5.0], [1.0, 0.0]))
+    prob_mods.append(interp(width_at_t, [3.5, 4.5], [1.0, 0.0]))
   mod = min(prob_mods)
   l_prob = mod * l_prob
   r_prob = mod * r_prob
